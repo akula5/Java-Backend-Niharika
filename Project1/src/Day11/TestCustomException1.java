@@ -1,6 +1,6 @@
 package Project1.src.Day11;
 
-class InvalidAgeException  extends Exception
+class InvalidAgeException  extends RuntimeException
 {
     public InvalidAgeException (String str)
     {
