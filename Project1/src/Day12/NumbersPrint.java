@@ -5,10 +5,8 @@ public class NumbersPrint implements Runnable{
     public static void main(String args[])
     {
         NumbersPrint n = new NumbersPrint();
-        Runnable NumbersPrint;
-        Thread t = new Thread(n, "Printing Numbers");
+        Thread t = new Thread(n);
         t.start();
-        System.out.println(t.getName());
     }
     @Override
     public void run() {
